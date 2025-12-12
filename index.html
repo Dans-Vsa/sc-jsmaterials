@@ -1,304 +1,225 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Danish — Frontend Developer</title>
+    <title>Danish Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Navigation -->
-    <nav class="nav">
-      <div class="nav-container">
+    <!-- Header & Navigation -->
+    <header class="header">
+      <nav class="nav container">
         <a href="#home" class="logo">Danish<span class="dot">.</span></a>
 
-        <div class="nav-actions">
-          <ul class="nav-menu" id="nav-menu">
-            <li><a href="#home" class="nav-link active">Home</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-          </ul>
+        <!-- Navigation Links -->
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
 
-          <div class="nav-buttons">
-            <button id="theme-toggle" aria-label="Toggle theme">
-              <span class="theme-icon">🌙</span>
-            </button>
-            <button
-              id="mobile-toggle"
-              aria-label="Toggle menu"
-              class="mobile-toggle"
-            >
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </nav>
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" aria-label="Toggle theme">
+          <span class="theme-icon"></span>
+        </button>
+      </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-      <div class="container">
-        <div class="hero-grid">
-          <div class="hero-content">
-            <div class="badge">Frontend Developer</div>
-            <h1>
-              Crafting Digital <br /><span class="gradient-text"
-                >Masterpieces</span
-              >
-            </h1>
-            <p>
-              I build accessible, pixel-perfect, and performant web experiences
-              that blend elegant design with robust engineering.
-            </p>
-            <div class="hero-actions">
-              <a href="#projects" class="btn btn-primary">View My Work</a>
-              <a href="#contact" class="btn btn-outline">Contact Me</a>
-            </div>
-            <div class="hero-stats">
-              <div class="stat-item">
-                <span class="stat-number">5+</span>
-                <span class="stat-label">Years Exp.</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number">50+</span>
-                <span class="stat-label">Projects</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number">20+</span>
-                <span class="stat-label">Clients</span>
-              </div>
-            </div>
-          </div>
-          <div class="hero-visual">
-            <div class="visual-circle"></div>
-            <div class="visual-card card-1">
-              <span>UI Design</span>
-              <div class="mini-progress"></div>
-            </div>
-            <div class="visual-card card-2">
-              <span>&lt;Code /&gt;</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">About Me</h2>
-          <p class="section-subtitle">
-            Get to know more about my journey and skills
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="container hero-content">
+          <span class="badge">Frontend Developer</span>
+          <h1>
+            Crafting Digital <br />
+            <span class="gradient-text">Masterpieces</span>
+          </h1>
+          <p>
+            I build accessible, pixel-perfect, and performant web experiences
+            that blend elegant design with robust engineering.
           </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat"><strong>5+</strong> Years Exp.</div>
+            <div class="stat"><strong>50+</strong> Projects</div>
+            <div class="stat"><strong>20+</strong> Clients</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section container">
+        <div class="section-header">
+          <h2>About Me</h2>
+          <p>Get to know more about my journey and skills</p>
         </div>
 
-        <div class="about-grid">
-          <div class="about-image">
-            <div class="image-placeholder">
-              <span>Profile Image</span>
-            </div>
-          </div>
-          <div class="about-content">
-            <h3>
-              Passionate about creating
-              <span class="highlight">seamless</span> user experiences.
-            </h3>
+        <div class="about-content">
+          <div class="about-text">
             <p>
-              I'm a frontend developer based in Indonesia. I specialize in
-              building high-quality websites and applications with modern
-              technologies. My goal is to build products that are not only
-              functional but also beautiful and easy to use.
+              I'm a passionate developer dedicated to creating intuitive and
+              dynamic user experiences. With a strong foundation in modern web
+              technologies, I turn complex problems into simple, beautiful
+              solutions.
             </p>
-
-            <div class="skills-wrapper">
-              <h4>Tech Stack</h4>
-              <div class="skills-grid">
-                <div class="skill-tag">HTML5</div>
-                <div class="skill-tag">CSS3</div>
-                <div class="skill-tag">JavaScript</div>
-                <div class="skill-tag">React</div>
-                <div class="skill-tag">TypeScript</div>
-                <div class="skill-tag">Tailwind</div>
-                <div class="skill-tag">Git</div>
-                <div class="skill-tag">Figma</div>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <span>HTML/CSS</span>
+              <div class="progress-bar">
+                <div class="progress" style="width: 95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span>JavaScript</span>
+              <div class="progress-bar">
+                <div class="progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span>React</span>
+              <div class="progress-bar">
+                <div class="progress" style="width: 85%"></div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-      <div class="container">
+      <!-- Projects Section -->
+      <section id="projects" class="section container">
         <div class="section-header">
-          <h2 class="section-title">Selected Works</h2>
-          <p class="section-subtitle">
-            A collection of projects I've worked on
-          </p>
+          <h2>My Projects</h2>
+          <p>A selection of my recent work</p>
         </div>
 
-        <div class="filter-container">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="web">Web Development</button>
-          <button class="filter-btn" data-filter="design">UI/UX Design</button>
+        <div class="filter-tabs">
+          <button class="filter-tab active" data-filter="all">All</button>
+          <button class="filter-tab" data-filter="web">Web</button>
+          <button class="filter-tab" data-filter="app">App</button>
         </div>
 
         <div class="projects-grid">
           <!-- Project 1 -->
           <article class="project-card" data-category="web">
-            <div class="card-image">
-              <div class="img-placeholder">Coffee Shop</div>
-              <div class="card-overlay">
-                <a href="#" class="btn-icon">View</a>
-              </div>
-            </div>
-            <div class="card-content">
-              <div class="card-meta">Web Dev</div>
-              <h3>Coffee Shop Landing</h3>
+            <div class="project-image"></div>
+            <div class="project-info">
+              <h3>E-Commerce Platform</h3>
               <p>
-                A modern landing page for a coffee shop with smooth scroll
-                animations and responsive layout.
+                A full-featured online store with cart and payment integration.
               </p>
-              <div class="card-tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JS</span>
-              </div>
+              <div class="tags"><span>React</span><span>Node.js</span></div>
             </div>
           </article>
 
           <!-- Project 2 -->
-          <article class="project-card" data-category="web">
-            <div class="card-image">
-              <div class="img-placeholder">Task App</div>
-              <div class="card-overlay">
-                <a href="#" class="btn-icon">View</a>
-              </div>
-            </div>
-            <div class="card-content">
-              <div class="card-meta">Application</div>
+          <article class="project-card" data-category="app">
+            <div class="project-image"></div>
+            <div class="project-info">
               <h3>Task Manager App</h3>
               <p>
-                Productivity application to manage daily tasks with local
-                storage data persistence.
+                Productivity application for managing daily tasks efficiently.
               </p>
-              <div class="card-tags">
-                <span>React</span>
-                <span>Redux</span>
-              </div>
+              <div class="tags"><span>Vue</span><span>Firebase</span></div>
             </div>
           </article>
 
           <!-- Project 3 -->
-          <article class="project-card" data-category="design">
-            <div class="card-image">
-              <div class="img-placeholder">Dashboard</div>
-              <div class="card-overlay">
-                <a href="#" class="btn-icon">View</a>
-              </div>
-            </div>
-            <div class="card-content">
-              <div class="card-meta">UI Design</div>
-              <h3>Analytics Dashboard</h3>
-              <p>
-                Clean and minimalist dashboard interface design for data
-                visualization.
-              </p>
-              <div class="card-tags">
-                <span>Figma</span>
-                <span>Prototyping</span>
-              </div>
+          <article class="project-card" data-category="web">
+            <div class="project-image"></div>
+            <div class="project-info">
+              <h3>Portfolio Website</h3>
+              <p>Minimalist portfolio template for creative professionals.</p>
+              <div class="tags"><span>HTML</span><span>CSS</span></div>
             </div>
           </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <div class="contact-wrapper">
-          <div class="contact-info">
-            <h2 class="section-title text-left">Let's Talk</h2>
-            <p>
-              Have a project in mind or just want to say hi? Feel free to send
-              me a message.
-            </p>
-
-            <div class="info-items">
-              <div class="info-item">
-                <div class="info-icon">📧</div>
-                <div>
-                  <span class="label">Email</span>
-                  <a href="mailto:hello@danish.dev">hello@danish.dev</a>
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">📍</div>
-                <div>
-                  <span class="label">Location</span>
-                  <span>Jakarta, Indonesia</span>
-                </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">💼</div>
-                <div>
-                  <span class="label">Availability</span>
-                  <span>Open for freelance</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="social-links">
-              <a href="#" class="social-link">GH</a>
-              <a href="#" class="social-link">LI</a>
-              <a href="#" class="social-link">TW</a>
-            </div>
-          </div>
-
-          <form id="contact-form" class="contact-form">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" placeholder="John Doe" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                placeholder="john@example.com"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                rows="5"
-                placeholder="Tell me about your project..."
-                required
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary full-width">
-              Send Message
-            </button>
-            <p id="form-status" class="form-status"></p>
-          </form>
+      <!-- Contact Section -->
+      <section id="contact" class="section container">
+        <div class="section-header">
+          <h2>Get In Touch</h2>
+          <p>Have a project in mind? Let's talk.</p>
         </div>
-      </div>
-    </section>
+
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <textarea
+              id="message"
+              rows="5"
+              placeholder="Your Message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p id="form-status" class="form-status"></p>
+        </form>
+      </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
-        <div class="footer-content">
-          <div class="footer-logo">Danish<span class="dot">.</span></div>
-          <p>&copy; <span id="year"></span> All rights reserved.</p>
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#home" class="footer-logo"
+              >Danish<span class="dot">.</span></a
+            >
+            <p>
+              Building digital experiences with passion and precision. Turning
+              complex problems into simple, elegant solutions.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Connect</h4>
+            <p>Jakarta, Indonesia</p>
+            <p>hello@danish.dev</p>
+            <div class="footer-social">
+              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; <span id="year"></span> Danish. All rights reserved.</p>
         </div>
       </div>
     </footer>
